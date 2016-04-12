@@ -18,12 +18,12 @@ body {
 
 .fb_iframe_widget {
   display: block !important;
-  margin: 20px auto !important;
+  margin: 0px auto 20px auto !important;
 }
 
 .bookmarklet a, .bookmarklet a:visited, #example a, #example a:visited {
  text-decoration: none;
- color:#77a5d0;
+ color:#3b5998;
 }
 
 .bookmarklet a:hover, .bookmarklet a:active, #example a:hover, #example a:active {
