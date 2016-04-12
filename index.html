@@ -48,6 +48,10 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1581019158875519";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    document.addEventListener('DOMContentLoaded',function(){ 
+      document.getElementById("the_bookmarklet").onclick = function (e) {e.preventDefault();alert("Drag this to your bookmarks bar and click it on other pages!")};
+    })    
   </script>
 </body>
 </html>
