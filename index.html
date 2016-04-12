@@ -23,9 +23,9 @@
 
     <div id='save-box'>
       <div class="fb-save" id="fb-save" data-uri=""></div>
-      <div id="fb-save-helper">Click the button above to save <strong>Save This!</strong> in your Facebook account as an example.</div>
+      <div id="fb-save-helper">Click the button above to add <strong>Save This!</strong> to your Facebook Saved Links as an example.</div>
     </div>
-  </div>  
+  </div>
 
   <div class="footer">
       <br>
@@ -52,7 +52,7 @@
     if (videoLink) {
       document.getElementById('fb-save').setAttribute('data-uri', videoLink);
       document.getElementById('url-form').style.display = 'none';
-      document.getElementById('fb-save-helper').innerHTML = 'Click the button above to save this URL in your Facebook account:<br><i>' + videoLink + '</i>';
+      document.getElementById('fb-save-helper').innerHTML = '<span style="color: #333333;">Click the button above to save this URL in your <a href="https://www.facebook.com/saved" target="_blank">Facebook Saved Links</a>:</span><br><i style="color: #AAAAAA;">' + videoLink + '</i>';
     }
 
 

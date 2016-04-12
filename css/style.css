@@ -4,6 +4,13 @@ body {
   text-align:center;
 }
 
+#url-form input {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  outline: none;
+}
+
 .bookmarklet, #example {
   text-align:center;
   margin:0 auto;
@@ -14,6 +21,7 @@ body {
   font-size: 14px;
   margin-top: 10px;
   line-height: 20px;
+  word-wrap: break-word;
 }
 
 .fb_iframe_widget {
