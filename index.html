@@ -40,9 +40,10 @@
   </div>
 
   <div class="footer">
-      <br>
-      <div class="bookmarklet"><a href="https://paypal.me/parterburn">Powered by donations</a></div>
-      <div class="prereqs"><a href="https://github.com/parterburn/facebookmarklet">Open-Sourced</a> by <a href="http://twitter.com/parterburn">@parterburn</a>
+      <div class="prereqs">
+        <a href="https://paypal.me/parterburn" style="color: #3b5998;">Powered by donations</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://github.com/parterburn/facebookmarklet">Open-Sourced</a> by <a href="http://twitter.com/parterburn">@parterburn</a>
       </div>
   </div>
 
@@ -67,7 +68,6 @@
       document.getElementById('fb-save-helper').innerHTML = '<span style="color: #333333;">Click the button above to save this URL in your <a href="https://www.facebook.com/saved" target="_blank">Facebook Saved Links</a>:</span><br><i style="color: #AAAAAA;">' + videoLink + '</i>';
     }
 
-
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -76,9 +76,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-    document.addEventListener('DOMContentLoaded',function(){ 
-      document.getElementById("the_bookmarklet").onclick = function (e) {e.preventDefault();alert("Drag this to your bookmarks bar and click it on other pages!")};
-    })
+    document.getElementById("the_bookmarklet").onclick = function (e) {e.preventDefault();alert("Drag this to your bookmarks bar and click it on other pages!")};
 
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
