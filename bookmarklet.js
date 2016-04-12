@@ -35,5 +35,5 @@ if (!document.getElementById('omipb3363199')) {
   o1.appendChild(document.createTextNode("Cancel"));
   o.appendChild(o1);
   document.body.appendChild(o);
-  window.location = "http://facebookmarklet.com/?video_link="+encodeURIComponent(window.location.href);
+  window.location = "https://parterburn.github.io/facebookmarklet/?video_link="+encodeURIComponent(window.location.href);
 }
