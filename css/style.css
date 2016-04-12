@@ -92,6 +92,10 @@ body {
   padding: 20px;
 }
 
-#embedhunt-embedder-product-slug-div .post, #embedhunt-embedder-product-slug-div .powered_by {
+#embedhunt-embedder-product-slug-div .post {
   margin: 0 auto;
+}
+
+#embedhunt-embedder-product-slug-div .powered_by {
+  display: none;
 }
