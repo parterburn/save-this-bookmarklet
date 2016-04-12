@@ -10,6 +10,11 @@ body {
   color:#777;
 }
 
+#fb-save-helper {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 .bookmarklet a, .bookmarklet a:visited, #example a, #example a:visited {
  text-decoration: none;
  color:#77a5d0;
