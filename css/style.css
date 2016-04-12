@@ -91,3 +91,7 @@ body {
   border-radius: 20px;
   padding: 20px;
 }
+
+#embedhunt-embedder-product-slug-div .post, #embedhunt-embedder-product-slug-div .powered_by {
+  margin: 0 auto;
+}
