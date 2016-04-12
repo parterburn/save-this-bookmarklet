@@ -13,6 +13,7 @@ body {
 #fb-save-helper {
   font-size: 14px;
   margin-top: 10px;
+  line-height: 20px;
 }
 
 .fb_iframe_widget {
