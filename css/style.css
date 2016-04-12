@@ -35,6 +35,12 @@ body {
  color:#3b5998;
 }
 
+#example {
+  color: #333;
+  font-size: 13px;
+  max-width: 750px;
+}
+
 .bookmarklet a:hover, .bookmarklet a:active, #example a:hover, #example a:active {
  text-decoration: underline;
   color:#3b74a6;
@@ -46,26 +52,6 @@ body {
   color:#777777;
   margin:2% 0px 20px 0px;
   padding:0px;
-}
-
-.header a {
-  color: #777777 !important;
-}
-
-.bookmarklet img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.bookmarklet img:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
 #the_bookmarklet {
@@ -82,7 +68,6 @@ body {
   color:#AAA;
   margin-top:20px;
   bottom:20px;
-  width:100%;
   margin-top: 60px;
 }
 .prereqs {
@@ -97,7 +82,6 @@ body {
 }
 
 #save-box {
-  width:100%;
   max-width: 750px;  
   background: whiteSmoke;
   margin: 50px auto;
