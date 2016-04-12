@@ -1,10 +1,22 @@
 <html>
 <head>
-  <title>Save This!</title>
+  <title>Save This! Facebook Save for all of the web.</title>
   <link rel="icon" type="image/x-icon" href="imagefiles/favicon.ico" />
-  <link href='//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,latin-ext' rel='stylesheet' type='text/css'>  
+  <link href='//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,latin-ext' rel='stylesheet' type='text/css'>
   <link href='css/style.css' rel='stylesheet' type='text/css'>  
-  <link rel="canonical" href="http://facebookmarklet.com" />
+  <link rel="canonical" href="https://facebookmarklet.com" />
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+  <meta content="Save This! Now you can save any website to your Facebook Saved Links." name="description" />
+  <meta content="facebook, instapaper, pocket, saved links, facebook save" name="keywords" />
+  <meta content="Save This! Facebook Save for all of the web." property="og:title" />
+  <meta content="Visit any website, click the bookmarklet and you're taken to a page where you can save it to your Facebook Saved Links." property="og:description" />
+  <meta content="http://facebookmarklet.com/imagefiles/facebookmarklet_logo_ogimage.png" property="og:image" />
+  <meta content="https://facebookmarklet.com/imagefiles/facebookmarklet_logo_ogimage.png" property="og:image:image:secure_url" />
+  <meta content="summary_large_image" property="twitter:card" />
+  <meta content="@parterburn" property="twitter:site" />
+  <meta content="Save This! Facebook Save for all of the web." property="twitter:title" />
+  <meta content="Visit any website, click the bookmarklet and you're taken to a page where you can save it to your Facebook Saved Links." property="twitter:description" />
+  <meta content="http://facebookmarklet.com/imagefiles/facebookmarklet_logo_ogimage.png" property="twitter:image:src" />  
 </head>
 <body>
   <div id="fb-root"></div>
@@ -66,7 +78,15 @@
 
     document.addEventListener('DOMContentLoaded',function(){ 
       document.getElementById("the_bookmarklet").onclick = function (e) {e.preventDefault();alert("Drag this to your bookmarks bar and click it on other pages!")};
-    })    
+    })
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-51294-44', 'auto');
+    ga('send', 'pageview');    
   </script>
 </body>
 </html>
