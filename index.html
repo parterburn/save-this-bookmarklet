@@ -31,7 +31,7 @@
 
     <form method="put" action="https://parterburn.github.io/facebookmarklet/index.html" id='url-form'>
       <br>Or enter the URL of any website: 
-      <input type="text" name="video_link" placeholder="http://download.ted.com/talks/TimFerriss_2008P-480p.mp4" size="55">
+      <input type="text" name="url" placeholder="http://download.ted.com/talks/TimFerriss_2008P-480p.mp4" size="55">
       <input type="submit" name="submit" value="Go">
     </form>
 
@@ -62,12 +62,11 @@
       }
     }
 
-    var videoLink = decodeURIComponent(gup('video_link'));
-    videoLink = decodeURIComponent(videoLink);
-    if (videoLink) {
-      document.getElementById('fb-save').setAttribute('data-uri', videoLink);
+    var urlLink = decodeURIComponent(gup('url'));
+    if (urlLink) {
+      document.getElementById('fb-save').setAttribute('data-uri', urlLink);
       document.getElementById('url-form').style.display = 'none';
-      document.getElementById('fb-save-helper').innerHTML = '<span style="color: #333333;">Click the button above to save this URL in your <a href="https://www.facebook.com/saved" target="_blank">Facebook Saved Links</a>:</span><br><i style="color: #AAAAAA;">' + videoLink + '</i>';
+      document.getElementById('fb-save-helper').innerHTML = '<span style="color: #333333;">Click the button above to save this URL in your <a href="https://www.facebook.com/saved" target="_blank">Facebook Saved Links</a>:</span><br><i style="color: #AAAAAA;">' + urlLink + '</i>';
     }
 
     (function(d, s, id) {
