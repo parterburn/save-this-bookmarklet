@@ -3,21 +3,17 @@
   <title>Save This!</title>
   <link rel="icon" type="image/x-icon" href="imagefiles/favicon.ico" />
   <link href='//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,latin-ext' rel='stylesheet' type='text/css'>  
+  <link href='css/style.css' rel='stylesheet' type='text/css'>  
   <link rel="canonical" href="http://facebookmarklet.com" />
-  <style>
-  body {
-    background-color:#F2F2F2;
-    font-family: 'Roboto', "OpenSans", "Verdana", Georgia, Serif;
-    text-align:center;
-  }
-  </style>
 </head>
 <body>
-  <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <center>
-    <h1>Save This!</h1>
-    <p>A bookmarketlet for any website to use the <a href="http://www.theverge.com/2016/4/12/11411312/save-to-facebook-button-announced-f8-conference-2016">Facebook Save</a> feature.</p>
+
+  <div class="bookmarklet">
+    <span class="header"><h1>Save This: <a href="http://www.theverge.com/2016/4/12/11411312/save-to-facebook-button-announced-f8-conference-2016" target="_blank">Facebook Save</a> for all of the web&nbsp;<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.fd774b599f565016d763dd860cb31c79.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Ffacebookmarklet.com%2F&amp;size=m&amp;text=Facebook%20Save%20for%20the%20rest%20of%20the%20web&amp;time=1460488029183&amp;type=share&amp;url=http%3A%2F%2Ffacebookmarklet.com&amp;via=parterburn" style="position: static; visibility: visible; width: 61px; height: 20px;" data-url="http://facebookmarklet.com"></iframe>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></h1></span>
+
+    <a href="javascript:function iprl5(){var d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;try{if(!b)throw(0);z.setAttribute('src','http://facebookmarklet.com/bookmarklet.js?'+(new Date().getTime()));b.appendChild(z);}catch(e){alert('Please wait until the page has loaded.');}}iprl5();void(0)" id="the_bookmarklet">Save This</a> → drag this bookmarklet to your bookmarks bar &amp; click it on any webpage to save.
 
     <form method="put" action="http://facebookmarklet.com/index.html">
     <br>Or enter the URL of any video/image: 
@@ -25,35 +21,33 @@
     <input type="submit" name="submit" value="Go">
     </form>
 
-  <!-- Your save button code -->
-  <div class="fb-save" id="fb-save" data-uri=""></div>
+    <div class="fb-save" id="fb-save" data-uri=""></div>    
+  </div>  
 
-<script type="text/javascript">
-function gup( name ){
-  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");  
-  var regexS = "[\\?&]"+name+"=([^&#]*)";  
-  var regex = new RegExp( regexS );  
-  var results = regex.exec( window.location.href ); 
-  if( results == null ) {
-    return "";
-  } else {
-    return results[1];
-  }
-}
+  <script type="text/javascript">
+    function gup( name ){
+      name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");  
+      var regexS = "[\\?&]"+name+"=([^&#]*)";  
+      var regex = new RegExp( regexS );  
+      var results = regex.exec( window.location.href ); 
+      if( results == null ) {
+        return "";
+      } else {
+        return results[1];
+      }
+    }
 
-var video_link = decodeURIComponent(gup('video_link'));
-video_link = decodeURIComponent(video_link);
-document.getElementById('fb-save').setAttribute('data-uri', video_link);
+    var video_link = decodeURIComponent(gup('video_link'));
+    video_link = decodeURIComponent(video_link);
+    document.getElementById('fb-save').setAttribute('data-uri', video_link);
 
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1581019158875519";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-// gh-pages
-</script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1581019158875519";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 </html>

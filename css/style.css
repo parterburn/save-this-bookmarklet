@@ -1,0 +1,56 @@
+body {
+  background-color:#F2F2F2;
+  font-family: 'Roboto', "OpenSans", "Verdana", Georgia, Serif;
+  text-align:center;
+}
+
+.bookmarklet, #example {
+  text-align:center;
+  margin:0 auto;
+  color:#777;
+}
+
+.bookmarklet a, .bookmarklet a:visited, #example a, #example a:visited {
+ text-decoration: none;
+ color:#77a5d0;
+}
+
+.bookmarklet a:hover, .bookmarklet a:active, #example a:hover, #example a:active {
+ text-decoration: underline;
+  color:#3b74a6;
+}
+
+.header h1 {
+  font-size:24px;
+  font-weight:400;
+  color:#333;
+  margin:2% 0px 20px 0px;
+  padding:0px;
+}
+
+.header a {
+  color: #333 !important;
+}
+
+.bookmarklet img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.bookmarklet img:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#the_bookmarklet {
+  padding: 2px 8px;
+  border: 2px solid;
+  border-radius: 5px;
+  text-decoration: none !important;  
+}
