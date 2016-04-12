@@ -84,12 +84,21 @@ body {
 
 #save-box {
   max-width: 750px;  
-  background: whiteSmoke;
+  background: #333333;
   margin: 50px auto;
   text-align: center;
   border: 2px solid #DDDDDD;
   border-radius: 20px;
   padding: 20px;
+  color: #CCCCCC;
+}
+
+#save-box a {
+  color: whiteSmoke;
+}
+
+#save-box a:hover {
+  color: white;
 }
 
 #embedhunt-embedder-product-slug-div .post {
