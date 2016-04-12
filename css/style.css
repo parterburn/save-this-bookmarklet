@@ -9,6 +9,7 @@ body {
   border-radius: 5px;
   border: 1px solid #CCCCCC;
   outline: none;
+  background: white;
 }
 
 .bookmarklet, #example {
