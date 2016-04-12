@@ -12,6 +12,11 @@ body {
   background: white;
 }
 
+#url-form input[type=submit] {
+  padding: 5px 8px;
+  background: whiteSmoke;
+}
+
 .bookmarklet, #example {
   text-align:center;
   margin:0 auto;
