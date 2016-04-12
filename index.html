@@ -21,9 +21,18 @@
       <input type="submit" name="submit" value="Go">
     </form>
 
-    <div class="fb-save" id="fb-save" data-uri=""></div>
-    <div id="fb-save-helper">Click the button above to save <strong>Save This!</strong> in your Facebook account as an example.</div>
+    <div id='save-box'>
+      <div class="fb-save" id="fb-save" data-uri=""></div>
+      <div id="fb-save-helper">Click the button above to save <strong>Save This!</strong> in your Facebook account as an example.</div>
+    </div>
   </div>  
+
+  <div class="footer">
+      <br>
+      <div class="bookmarklet"><a href="https://paypal.me/parterburn">Powered by donations</a></div>
+      <div class="prereqs"><a href="https://github.com/parterburn/facebookmarklet">Open-Sourced</a> by <a href="http://twitter.com/parterburn">@parterburn</a>
+      </div>
+  </div>
 
   <script type="text/javascript">
     function gup( name ){
@@ -43,7 +52,7 @@
     if (videoLink) {
       document.getElementById('fb-save').setAttribute('data-uri', videoLink);
       document.getElementById('url-form').style.display = 'none';
-      document.getElementById('fb-save-helper').innerHTML = 'Click the button above to save this URL in your Facebook account: ' + videoLink;
+      document.getElementById('fb-save-helper').innerHTML = 'Click the button above to save this URL in your Facebook account:<br><i>' + videoLink + '</i>';
     }
 
 

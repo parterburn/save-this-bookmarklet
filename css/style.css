@@ -15,6 +15,11 @@ body {
   margin-top: 10px;
 }
 
+.fb_iframe_widget {
+  display: block !important;
+  margin: 20px auto !important;
+}
+
 .bookmarklet a, .bookmarklet a:visited, #example a, #example a:visited {
  text-decoration: none;
  color:#77a5d0;
@@ -58,4 +63,36 @@ body {
   border: 2px solid;
   border-radius: 5px;
   text-decoration: none !important;  
+}
+
+.footer {
+  float:none;
+  text-align:center;
+  margin:0 auto;
+  color:#AAA;
+  margin-top:20px;
+  bottom:20px;
+  width:100%;
+  margin-top: 60px;
+}
+.prereqs {
+  font-size:12px;
+  margin-top:8px;
+  color:#AAA;
+}
+
+.prereqs a, .prereqs a:visited {
+  text-decoration: none;
+  color:#AAA;
+}
+
+#save-box {
+  width:100%;
+  max-width: 750px;  
+  background: whiteSmoke;
+  margin: 50px auto;
+  text-align: center;
+  border: 2px solid #DDDDDD;
+  border-radius: 20px;
+  padding: 20px;
 }
