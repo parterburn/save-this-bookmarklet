@@ -39,6 +39,7 @@ body {
   color: #333;
   font-size: 13px;
   max-width: 750px;
+  line-height: 20px;
 }
 
 .bookmarklet a:hover, .bookmarklet a:active, #example a:hover, #example a:active {
