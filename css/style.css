@@ -42,13 +42,13 @@ body {
 .header h1 {
   font-size:24px;
   font-weight:400;
-  color:#333;
+  color:#777777;
   margin:2% 0px 20px 0px;
   padding:0px;
 }
 
 .header a {
-  color: #333 !important;
+  color: #777777 !important;
 }
 
 .bookmarklet img {
