@@ -22,7 +22,7 @@
     </form>
 
     <div class="fb-save" id="fb-save" data-uri=""></div>
-    <div id="fb-save-helper" style="display: none;">Click the button above to save <strong>Save This!</strong> in your Facebook account as an example.</div>
+    <div id="fb-save-helper">Click the button above to save <strong>Save This!</strong> in your Facebook account as an example.</div>
   </div>  
 
   <script type="text/javascript">
@@ -43,9 +43,7 @@
     if (videoLink) {
       document.getElementById('fb-save').setAttribute('data-uri', videoLink);
       document.getElementById('fb-form').style.display = 'none';
-      var urlHelper = document.getElementById('fb-save-helper');
-      urlHelper.style.display = 'block';
-      urlHelper.innerHTML = 'Click the button above to save this URL in your Facebook account: ' + videoLink;
+      document.getElementById('fb-save-helper').innerHTML = 'Click the button above to save this URL in your Facebook account: ' + videoLink;
     }
 
 
