@@ -15,13 +15,14 @@
 
     <a href="javascript:function iprl5(){var d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;try{if(!b)throw(0);z.setAttribute('src','http://facebookmarklet.com/bookmarklet.js?'+(new Date().getTime()));b.appendChild(z);}catch(e){alert('Please wait until the page has loaded.');}}iprl5();void(0)" id="the_bookmarklet">Save This</a> → drag this bookmarklet to your bookmarks bar &amp; click it on any webpage to save.
 
-    <form method="put" action="http://facebookmarklet.com/index.html">
-    <br>Or enter the URL of any video/image: 
-    <input type="text" name="video_link" placeholder="http://download.ted.com/talks/TimFerriss_2008P-480p.mp4" size="65">
-    <input type="submit" name="submit" value="Go">
+    <form method="put" action="http://facebookmarklet.com/index.html" id='url-form'>
+      <br>Or enter the URL of any video/image: 
+      <input type="text" name="video_link" placeholder="http://download.ted.com/talks/TimFerriss_2008P-480p.mp4" size="65">
+      <input type="submit" name="submit" value="Go">
     </form>
 
-    <div class="fb-save" id="fb-save" data-uri=""></div>    
+    <div class="fb-save" id="fb-save" data-uri=""></div>
+    <div id="fb-save-helper" style="display: none;"></div>
   </div>  
 
   <script type="text/javascript">
@@ -37,9 +38,16 @@
       }
     }
 
-    var video_link = decodeURIComponent(gup('video_link'));
-    video_link = decodeURIComponent(video_link);
-    document.getElementById('fb-save').setAttribute('data-uri', video_link);
+    var videoLink = decodeURIComponent(gup('video_link'));
+    videoLink = decodeURIComponent(videoLink);
+    if (videoLink) {
+      document.getElementById('fb-save').setAttribute('data-uri', videoLink);
+      document.getElementById('fb-form').style.display = 'none';
+      var urlHelper = document.getElementById('fb-save-helper');
+      urlHelper.style.display = 'block';
+      urlHelper.innerHTML = 'Click the button above to save this URL in your Facebook account: ' + videoLink;
+    }
+
 
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
