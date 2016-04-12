@@ -69,7 +69,7 @@ body {
   color:#AAA;
   margin-top:20px;
   bottom:20px;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .prereqs {
   font-size:12px;
@@ -107,4 +107,20 @@ body {
 
 #embedhunt-embedder-product-slug-div .powered_by {
   display: none;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -150px;
+}
+.footer-push, .push {
+  height: 150px;
 }
